@@ -72,9 +72,6 @@ const user = new USER({
 });
 // Within Async Func
 (async() => {
-  const user = await user.get();
-  // xxxx
-
   const result = await user.set({
     emergency_contact: 'Willin',
     emergency_mobile: '1xxxxxxxxxx'
@@ -100,8 +97,12 @@ const user = new USER({
 });
 
 (async() => {
-  const result = await user.set({
+  const user = await user.get();
+  // xxxx
 
+  const result = await user.set({
+    emergency_contact: 'Willin',
+    emergency_mobile: '1xxxxxxxxxx'
   });
   // xxxx
 })();
