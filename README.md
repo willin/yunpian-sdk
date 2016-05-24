@@ -14,7 +14,7 @@ Minimum, Flexible, Scalable.
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [安装和使用](#%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8)
-- [手机合法性校验](#%E6%89%8B%E6%9C%BA%E5%90%88%E6%B3%95%E6%80%A7%E6%A0%A1%E9%AA%8C)
+- [手机号合法性校验](#%E6%89%8B%E6%9C%BA%E5%8F%B7%E5%90%88%E6%B3%95%E6%80%A7%E6%A0%A1%E9%AA%8C)
 - [已支持的接口](#%E5%B7%B2%E6%94%AF%E6%8C%81%E7%9A%84%E6%8E%A5%E5%8F%A3)
   - [USER - 账户API](#user---%E8%B4%A6%E6%88%B7api)
   - [TPL - 模板API](#tpl---%E6%A8%A1%E6%9D%BFapi)
