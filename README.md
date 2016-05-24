@@ -2,6 +2,8 @@
 
 [![npm](https://img.shields.io/npm/v/yunpian-sdk.svg?style=plastic)](https://npmjs.org/package/yunpian-sdk) [![npm](https://img.shields.io/npm/dm/yunpian-sdk.svg?style=plastic)](https://npmjs.org/package/yunpian-sdk) [![npm](https://img.shields.io/npm/dt/yunpian-sdk.svg?style=plastic)](https://npmjs.org/package/yunpian-sdk)
 
+云片注册地址： <https://www.yunpian.com/component/reg?inviteCode=atevkh>
+
 Minimum, Flexible, Scalable.
 
 支持Lazy Require。
