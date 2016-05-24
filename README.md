@@ -41,6 +41,23 @@ var options = {
 };
 ```
 
+ES7:
+
+```js
+import {USER} from 'yunpian-sdk';
+const user = new USER({
+  apikey: 'xxxx'
+});
+// Within Async Func
+(async() => {
+  const result = await user.set({
+    emergency_contact: 'Willin',
+    emergency_mobile: '1xxxxxxxxxx'
+  });
+  // xxxx
+});
+```
+
 ES5:
 
 ```js
@@ -65,22 +82,38 @@ user.set({
 });
 ```
 
-ES7:
+## 手机合法性校验
+
+ES7 示例代码：
 
 ```js
-import {USER} from 'yunpian-sdk';
-const user = new USER({
-  apikey: 'xxxx'
-});
-// Within Async Func
-(async() => {
-  const result = await user.set({
-    emergency_contact: 'Willin',
-    emergency_mobile: '1xxxxxxxxxx'
-  });
-  // xxxx
-});
+import {phone} from 'yunpian-sdk';
+
+// 加区号匹配国际各国号码格式
+phone('+8613312345678'); // true
+phone('+85265698900'); // true
+phone('+112345678'); // false
+
+// 不加区号按中国号码匹配
+phone('13312341234'); // true
+phone('112345678'); // false
 ```
+
+ES5 示例代码：
+
+```js
+var phone = require('yunpian-sdk').phone;
+
+// 加区号匹配国际各国号码格式
+phone('+8613312345678'); // true
+phone('+85265698900'); // true
+phone('+112345678'); // false
+
+// 不加区号按中国号码匹配
+phone('13312341234'); // true
+phone('112345678'); // false
+```
+
 
 ## 已支持的接口
 

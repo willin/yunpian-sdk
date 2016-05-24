@@ -1,6 +1,6 @@
 {
   "name": "yunpian-sdk",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Yunpian（云片API）Node.js SDK",
   "main": "dist/index.js",
   "scripts": {
@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "debug": "^2.2.0",
+    "phone": "^1.0.6",
     "request": "^2.69.0"
   }
 }

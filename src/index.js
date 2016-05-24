@@ -7,3 +7,11 @@ list.forEach((item) => {
     exports[item.toUpperCase()] = lazyLoad(item);
   }
 });
+
+import phone from 'phone';
+exports.phone = (number, location = '') => {
+  if (number.indexOf('+') === -1 && location === '') {
+    return phone(number, 'CHN').length !== 0;
+  }
+  return phone(number, location).length !== 0;
+};
