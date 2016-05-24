@@ -1,6 +1,6 @@
 {
   "name": "yunpian-sdk",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Yunpian（云片API）Node.js SDK",
   "main": "dist/index.js",
   "scripts": {
