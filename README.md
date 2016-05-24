@@ -98,21 +98,6 @@ phone('+112345678'); // false
 // 不加区号按中国号码匹配
 phone('13312341234'); // true
 phone('112345678'); // false
-```
-
-ES5 示例代码：
-
-```js
-var phone = require('yunpian-sdk').phone;
-
-// 加区号匹配国际各国号码格式
-phone('+8613312345678'); // true
-phone('+85265698900'); // true
-phone('+112345678'); // false
-
-// 不加区号按中国号码匹配
-phone('13312341234'); // true
-phone('112345678'); // false
 
 // 按地区匹配
 // 地区码使用3位缩写国家代码（大写）
@@ -120,6 +105,16 @@ phone('+18175698900', 'USA'); // true
 phone('13212345678', 'CHN'); // true
 phone('+18175698900', 'CHN'); // false
 phone('13212345678', 'HKG'); // false
+```
+
+ES5 示例代码：
+
+```js
+var phone = require('yunpian-sdk').phone;
+
+phone('+8613312345678'); // true
+phone('13312341234'); // true
+phone('13212345678', 'CHN'); // true
 ```
 
 
